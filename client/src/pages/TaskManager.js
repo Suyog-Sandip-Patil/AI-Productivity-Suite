@@ -3,9 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Plus, 
   Search, 
-  Filter, 
   Check, 
-  X, 
   Edit3, 
   Trash2, 
   Calendar,
@@ -37,7 +35,7 @@ const TaskManager = () => {
 
   useEffect(() => {
     filterTasks();
-  }, [tasks, searchTerm, filterPriority, filterStatus]);
+  }, [tasks, searchTerm, filterPriority, filterStatus, filterTasks]);
 
   const fetchTasks = async () => {
     try {

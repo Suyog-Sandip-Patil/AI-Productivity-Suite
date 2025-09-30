@@ -5,7 +5,6 @@ import {
   Calendar, 
   TrendingUp, 
   Plus, 
-  Edit3, 
   Save,
   X,
   Smile,

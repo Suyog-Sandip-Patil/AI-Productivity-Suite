@@ -105,3 +105,6 @@ Thumbs.db
 # Data backup files
 data.json.bak
 data.json.backup
+
+# Local Netlify folder
+.netlify
