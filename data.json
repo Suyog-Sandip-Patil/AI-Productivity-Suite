@@ -1,0 +1,56 @@
+{
+  "users": [
+    {
+      "id": "1759167047951oie5gtqjh",
+      "name": "Suyog Sandip Patil",
+      "email": "targetsuccessyt@gmail.com",
+      "password": "$2a$12$.lc6w2yui7vIINIlxvhZauOC2J0lgBQtTS/u5eses.DnB1LAnqeKq",
+      "createdAt": "2025-09-29T17:30:47.952Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "17591671432869knzj20hh",
+      "title": "Yoga",
+      "description": "Practice yoga daily to improve flexibility, reduce stress, and boost overall well-being",
+      "priority": "high",
+      "completed": false,
+      "userId": "1759167047951oie5gtqjh",
+      "createdAt": "2025-09-29T17:32:23.286Z",
+      "updatedAt": "2025-09-30T15:58:41.493Z"
+    }
+  ],
+  "moods": [],
+  "quotes": [
+    {
+      "id": 1,
+      "text": "The only way to do great work is to love what you do.",
+      "author": "Steve Jobs",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "text": "Mindfulness is about being fully awake in our lives.",
+      "author": "Jon Kabat-Zinn",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "text": "Progress, not perfection, is the goal.",
+      "author": "Anonymous",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "text": "Take time to make your soul happy.",
+      "author": "Anonymous",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "text": "Your mental health is just as important as your physical health.",
+      "author": "Anonymous",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    }
+  ]
+}
