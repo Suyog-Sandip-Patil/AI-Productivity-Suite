@@ -11,7 +11,7 @@ const moodRoutes = require('./routes/moods');
 const quoteRoutes = require('./routes/quotes');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 // Security middleware
 app.use(helmet());
@@ -48,14 +48,23 @@ app.use('/api/tasks', taskRoutes);
 app.use('/api/moods', moodRoutes);
 app.use('/api/quotes', quoteRoutes);
 
-// Serve static files from React build
-if (process.env.NODE_ENV === 'production') {
+// Serve static files from React build (only for non-Vercel deployments)
+if (process.env.NODE_ENV === 'production' && !process.env.VERCEL) {
   app.use(express.static(path.join(__dirname, 'client/build')));
   
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
   });
 }
+
+// Root API endpoint for testing
+app.get('/api', (req, res) => {
+  res.json({ 
+    message: 'Mindful Day API is running!', 
+    timestamp: new Date().toISOString(),
+    version: '1.0.0'
+  });
+});
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {

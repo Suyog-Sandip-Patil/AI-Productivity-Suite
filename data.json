@@ -14,13 +14,42 @@
       "title": "Yoga",
       "description": "Practice yoga daily to improve flexibility, reduce stress, and boost overall well-being",
       "priority": "high",
-      "completed": false,
+      "completed": true,
       "userId": "1759167047951oie5gtqjh",
       "createdAt": "2025-09-29T17:32:23.286Z",
-      "updatedAt": "2025-09-30T15:58:41.493Z"
+      "updatedAt": "2025-10-01T10:51:43.581Z"
+    },
+    {
+      "id": "1759315918227i7rbivh8t",
+      "title": "Meditation",
+      "description": "",
+      "priority": "medium",
+      "completed": true,
+      "userId": "1759167047951oie5gtqjh",
+      "createdAt": "2025-10-01T10:51:58.227Z",
+      "updatedAt": "2025-10-01T10:52:01.513Z"
     }
   ],
-  "moods": [],
+  "moods": [
+    {
+      "id": "1759314239734l1xuac2bh",
+      "emoji": "😄",
+      "rating": 6,
+      "note": "",
+      "date": "2025-10-01",
+      "userId": "1759167047951oie5gtqjh",
+      "createdAt": "2025-10-01T10:23:59.734Z"
+    },
+    {
+      "id": "1759389630162l65izfhav",
+      "emoji": null,
+      "rating": 10,
+      "note": "",
+      "date": "2025-10-02",
+      "userId": "1759167047951oie5gtqjh",
+      "createdAt": "2025-10-02T07:20:30.171Z"
+    }
+  ],
   "quotes": [
     {
       "id": 1,

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Plus, 
@@ -29,14 +29,6 @@ const TaskManager = () => {
     priority: 'medium'
   });
 
-  useEffect(() => {
-    fetchTasks();
-  }, []);
-
-  useEffect(() => {
-    filterTasks();
-  }, [tasks, searchTerm, filterPriority, filterStatus, filterTasks]);
-
   const fetchTasks = async () => {
     try {
       const response = await axios.get('/api/tasks');
@@ -49,7 +41,7 @@ const TaskManager = () => {
     }
   };
 
-  const filterTasks = () => {
+  const filterTasks = useCallback(() => {
     let filtered = tasks;
 
     // Search filter
@@ -73,7 +65,15 @@ const TaskManager = () => {
     }
 
     setFilteredTasks(filtered);
-  };
+  }, [tasks, searchTerm, filterPriority, filterStatus]);
+
+  useEffect(() => {
+    fetchTasks();
+  }, []);
+
+  useEffect(() => {
+    filterTasks();
+  }, [filterTasks]);
 
   const handleAddTask = async (e) => {
     e.preventDefault();

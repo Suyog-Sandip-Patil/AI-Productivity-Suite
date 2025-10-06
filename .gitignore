@@ -108,3 +108,5 @@ data.json.backup
 
 # Local Netlify folder
 .netlify
+
+.vercel
