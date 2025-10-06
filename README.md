@@ -366,7 +366,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ---
 
 **Built with ❤️ for productivity and wellness enthusiasts**  
-**© 2025 AI Productivity Suite - Created by Suyog Patil**em
+**© 2025 AI Productivity Suite - Created by Suyog Patil**
 
 ---
 
